@@ -28,7 +28,7 @@ if (inApp) {
 } else if (!/[?&]t=/.test(q)) {
   document.write('<div class="msg"><h1>화인 찰칵!: 화인바이오 시험포 데이터 공유</h1>접속 주소에 총판 번호가 없습니다. 본사에서 받은 주소로 다시 열어 주세요.</div>');
 } else {
-  document.write('<iframe src="' + APP + q + '" allow="camera; microphone; geolocation" title="화인 찰칵!: 화인바이오 시험포 데이터 공유"></iframe>');
+  document.write('<iframe src="' + APP + q + '" allow="camera; microphone; geolocation; web-share; clipboard-write" title="화인 찰칵!: 화인바이오 시험포 데이터 공유"></iframe>');
 }
 </script>
 </body></html>

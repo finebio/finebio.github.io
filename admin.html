@@ -31,7 +31,7 @@ if (inApp) {
   document.write('<div class="msg"><h1>화인바이오 본사</h1>개인 링크로 열어 주세요. 링크는 대표님(관리자)이 본사 화면 → 설정 → 본사 사용자에서 보내 드립니다.</div>');
 } else {
   if (!/[?&]admin=/.test(q)) q = (q ? q + '&' : '?') + 'admin=1';
-  document.write('<iframe src="' + APP + q + '" allow="camera; microphone; geolocation" title="화인바이오 본사"></iframe>');
+  document.write('<iframe src="' + APP + q + '" allow="camera; microphone; geolocation; web-share; clipboard-write" title="화인바이오 본사"></iframe>');
 }
 </script>
 </body></html>
